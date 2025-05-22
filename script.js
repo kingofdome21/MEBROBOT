@@ -713,17 +713,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     updateLanguage("en");
     showHomeView(); 
-
-    document.querySelectorAll(".particle-item").forEach(item => {
-    item.addEventListener("click", () => {
-        const particleId = item.getAttribute("data-particle-id");
-        showParticleDetails(particleId);
-    });
-});
-
-function showParticleDetails(particleId) {
-    alert("You clicked on: " + particleId); // Replace this with your custom logic
-    // You can also show a modal, load a particle card, etc.
-}
 });
 
